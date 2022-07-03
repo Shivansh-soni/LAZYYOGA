@@ -1,0 +1,254 @@
+*{
+  background-color: #ebedee;
+  /* opacity: 3.8;
+  background-repeat: no-repeat; */
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.gl{
+    float: left;
+    padding-right: 10px;
+}
+.gl1{
+  float: right;
+  padding-left: 10px;
+}
+.heading h1{
+    text-align: center;
+    color: rgb(147, 27, 99);
+    font-size: 30px;
+}
+.hero-cta{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 40px;
+    background: #febc1d;
+    display: inline-block;
+    color: purple;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.qx{
+  text-align: center;
+  padding: 20px 40px;
+}
+.qx p{
+    text-indent: 30px;
+    margin-left: 10px;
+}
+/* .rb{
+    background-color: #F4F5F6;
+} */
+.rb p{
+    text-indent: 30px;
+}
+.btn{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.banner-img{
+  height: 400px;
+  
+}
+#footer {
+    position: relative;
+    margin-bottom: 0%;
+    margin-top: 5%;
+}
+
+#footer .footer {
+    min-height: 50px;
+    /* flex-direction: column; */
+    /* padding-top: -20px; */
+    padding-bottom: 2px;
+    margin-bottom: 0px;
+}
+.logo{
+  width: 70px;
+  height: 100%;
+  justify-content: center;
+  align-items: right;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+    
+#footer h2{
+      color: black;
+      font-weight: 500;
+      font-size: 1.8rem;
+      letter-spacing: 0.1rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+}
+
+#footer h6{
+    color: black;
+    font-weight: 50;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer h1{
+    color: black;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+    
+#footer .social-icon {
+    display: table-cell;
+    margin-bottom: 30px;
+    padding-left: 25px;
+    align-items: center;
+      
+}
+   
+#footer .social-item {
+      height: 2px;
+      margin: 0 5px;
+      display: table-cell;
+      /* text-align: center; */
+      padding-left: 205px;
+}
+    
+    
+#footer .social-item img {
+      filter: grayscale(1);
+      transition: 0.3s ease filter;
+}
+    
+#footer .social-item:hover img {
+      list-style-type: none;
+      font-size: 100px;
+      color: rgb(255, 119, 0);
+}
+    
+#footer p {
+      color: white;
+      font-size: 1.3rem;
+      text-align: center;
+}
+
+    
+.heading h1{
+      text-align: center;
+      color: rgb(147, 27, 99);
+      font-size: 50px;
+      font-style: italic;
+      font-weight: bold;
+      margin-top: 10px;
+    
+}
+
+    
+.animatedText{
+      animation: fadeAndScale .3s ease-in;
+      transform-origin: center bottom;
+}
+    
+    
+@keyframes fadeAndScale {
+      from{
+        opacity: 0;
+        transform: scale3d(.75, .75, 1);
+      }
+      to{
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+      }
+    
+}
+
+    
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 60px;
+      font-weight:bolder;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.txt{
+  text-align: center;
+  font-style: italic;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+
+.image1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 450px;
+  width: 450px;
+}
+
+
+.hover07 figure img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover07 figure:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+.fl{
+  font-weight: 800;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.hero-cta-link{
+
+  font-size: 19px;
+  font-weight: bold;
+  padding: 20px 40px;
+  background: #fab5ea;
+  display: inline-block;
+  color: rgb(45, 0, 45);
+  margin-top: 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  
+}
+
+a:hover{
+  background-color: rgb(224, 164, 239);
+  text-decoration:underline;
+}
+

@@ -1,0 +1,31 @@
+<%
+String fname = request.getParameter("FName");
+String lname = request.getParameter("LName");
+String gender = request.getParameter("a");
+String email = request.getParameter("Eid");
+String number = request.getParameter("Phone");
+String plan = request.getParameter("Plan");
+String person = request.getParameter("pers");
+String amount = request.getParameter("am");
+
+try{
+Class.forName("com.mysql.jdbc.Driver");
+}
+catch(ClassNotFoundException e)
+{
+out.println("Error in Loading Driver"+e);
+}
+
+try{
+Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/LazyYoga? user = root&password=12345@54321");
+
+PreparedStatement ps= con.prepareStatement("insert into payment_reg(fname,lname,gender,email,number,plan,person,amount)values('"+fname+"','"+lname+"','"+gender+"','"+email+"','"+number+"','"+plan+"','"+person+"','"+amount+"')");
+
+out.println("Data is successfully inserted!");
+}
+catch(Exception e)
+        {
+        out.println(e);
+        e.printStackTrace();
+        }
+ %>

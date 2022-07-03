@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html long="en" dir="ltr">
+<title>
+    Create your coupon
+</title>
+<form action="coupon.jsp"></form>
+<input type="text" id="coupon" name="coupon" placeholder="Enter customised coupon" required>
+<input type="number" id="disc" name="disc" placeholder="Enter discount percentage" required>
+<input type="button" value="submit" onsubmit="return discount()" >
+
+<script type="text/javascript">
+
+    function discount()
+            {               
+             window.location="./coupon.jsp"
+            }
+</script>
