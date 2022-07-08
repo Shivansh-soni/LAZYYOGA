@@ -1,0 +1,38 @@
+<div class="line"></div><br>
+                    <table>
+                        <tr>
+                            <th class="th1" colspan="2">
+                                Lazy Yoga Certification<br>(11 minutes yoga):
+                            </th>
+                            <th class="th1" colspan="2">
+                                Lazy Yoga Corporate:
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="th2">Individual</th>
+                            <th class="th2">Certification for(inclusion)</th>
+                            <th class="th2">LazyYoga Plans</th>
+                            <th class="th2">Inclusion</th>
+                        </tr>
+                        <tr>
+                            <td><b>LazyYoga Practice</b></td>
+                            <td>Learn 11 verses of spiritually curated Vaidic Yoga practice</td>
+                            <td><b>1. LazyYoga world</b></td>
+                            <td>5 sessions to learn two verses</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><b>Lazy Yoga Coach</b></td>
+                            <td rowspan="2">Practice Certification +<br> 480 hours AgriVadic Internship</td>
+                            <td><b>2. LazyYoga Universe</b></td>
+                            <td>12 sessions to learn 5 verses</td>
+                        </tr>
+                        <tr>
+                            <td><b>3. Annual LazyYoga Contract</b></td>
+                            <td>weekly sessions covering all 11 verses with certification</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><a href="bass.html" class="hero-cta link">Individual Section</a></td></td>
+                            <td colspan="2"><a href="adv.html" class="hero-cta link">Corporate Section</a></td>
+                        </tr>
+                    </table>
+                </div>

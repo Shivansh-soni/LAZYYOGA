@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="YogaS.css">
-    <link rel="stylesheet" href="Loader.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./nav.css">
 
+    <!-- <link rel="stylesheet" href="./Loader.css"> -->
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -20,36 +22,45 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>LazyYoga</title>
     <link rel="shortcut icon" href="./img/yoga1.png" type="image/x-icon">
+    <style>
+ @media screen and (max-width: 768px){
+    #navul {      
+     top: 6vh; 
+     left: 0;
+    }
+    }
+    </style>
 </head>
 
 <body>
-
     <header class="main-header">
 
         <div class="menu-bar" id="bar">
             <div class="left">
-                <img src="./img/logo.jpg" alt="" href="./index.html">
+                <img src="./img/logo.jpg" alt="">
             </div>
             <div class="right">
-                <a class="navspan" href="#" onclick=opennav()><i class="fa-solid fa-bars"></i></a>
+                 <i class="fa-solid fa-bars navspan" onclick=opennav()></i>
                 <ul id="navul">
-                    <li><a href="./index.html">Home</a></li>
                     <li><a href="#Yoga">Yoga</a></li>
-                    <li><a href="#contact">Coach</a></li>
-                    <li><a href="./join.html">About Us</a></li>
+                    <li><a href="./coach.html">Coach</a></li>
+                    <li><a href="#banner-content">About Us</a></li>
                     <li><a href="./join.html">Join Us</a></li>
                 </ul>
             </div>
         </div>
         <div class="heading">
             <h1>Lazy Yoga</h1>
-            <p>Vaidic Yoga Life cycle to awaken spiritual cautiousness.</p>
+            
         </div>
 
 
     </header>
-    <main class="main-container">
-        <div class="card-container" data-aos="fade-left" data-aos-duration="1200">
+    <div id="hero">
+<p id="head-desc">Vaidic Yoga Life cycle to awaken spiritual cautiousness.</p>
+
+    <main  class="main-container" data-aos="fade" data-aos-duration="1500">
+        <div class="card-container" >
             <p class="main-card-title">It Really Helps</p>
             <div class="card-content">
                 <div class="card">
@@ -300,7 +311,7 @@
 
         <div class="banner-container">
             <div class="banner-content-container">
-                <div class="banner-content" data-aos="fade-up" data-aos-duration="1200">
+                <div class="banner-content" id="banner-content" data-aos="fade-up" data-aos-duration="1200">
                     <h3 class="banner-title">Lazy<span class="btitle1">Yoga</span></h3>
                     <p class="banner-desc">
                         Excel sheets, strategy, design plans, and deadlines may consume office hours.<br>Spiritual
@@ -356,7 +367,7 @@
                 <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div> -->
-        <h1 id="contact" style="text-align: center; margin: 10px; margin-bottom: 50px;">Develop healthy work life</h1>
+        <h1 id="about" style="text-align: center; padding-bottom: 85px ;  margin-bottom: 50px;">Develop healthy work life</h1>
         <div class="contact-container" data-aos="fade-in" data-aos-duration="1200">
             <div class="contact-form-container">
                 <div class="user-img-container">
@@ -374,11 +385,13 @@
             </div>
         </div>
     </main>
+        </div>
     <footer class="footer" data-aos="fade-down" data-aos-anchor-placement="center-bottom">
         <div class="footer-content">
             <div class="footer-upper">
                 <div class="footer-logo" id="about">
                     <a href="#" class="link footer-logo">LazyYoga</a>
+                    <br>
                 </div>
                 <div class="footer-content">
                     <nav class="footer-nav">
@@ -396,60 +409,56 @@
                                     </a>
                                 </li>
                             </ul>
-
                         </div>
-
+                      
                         <div class="quick">
-
                             <p class="footer-title">Quick Links</p>
                             <ul class="footer-nav-list">
                                 <li class="footer-nav-item">
                                     <a href="" class="footer-nav-link link">Home</a>
                                 </li>
                                 <li class="footer-nav-item">
-                                    <a href="#about" class="footer-nav-link link">About Coach</a>
+                                    <a href="./coach.html" class="footer-nav-link link">About Coach</a>
                                 </li>
                                 <li class="footer-nav-item">
-                                    <a href="mailto:hr@agrivaidic.in" class="footer-nav-link link" >Contact Us</a>
-                                </li>
-                               
+                                    <a href="mailto:hr@agrivaidic.in" class="footer-nav-link link">Contact Us</a>
+                                </li>          
                             </ul>
                         </div>
-
-                        <div class="useful">
+                        <div class="contact">
                             <p class="footer-title">Useful Links</p>
                             <ul class="footer-nav-list">
-                                 
-                                 <li class="footer-nav-item">
-                                    <a href="https://www.risingindia.in/" class="footer-nav-link link" target="_blank">RisingIndia</a>
+                                 <!-- <li class="footer-nav-item">
+                                    <a href="http://www.agrivaidic.in/" class="footer-nav-link link">AgriVaidic</a>
                                 </li>
                                  <li class="footer-nav-item">
-                                    <a href="http://www.agrivaidic.in/" class="footer-nav-link link" target="_blank">AgriVaidic</a>
-                                
+                                    <a href="https://www.risingindia.in/" class="footer-nav-link link">RisingIndia</a>
+                                </li> -->
+                                <li class="footer-nav-item">
+                                    <a href="./join.html" class="footer-nav-link link">Career in LazyYoga</a>
+                                </li>
+                                <li class="footer-nav-item">
+                                    <a href="./invest.html" class="footer-nav-link link">Invest in LazyYoga</a>
+                                </li>
                                  <li class="footer-nav-item">
-                                    <a class="footer-nav-link link" href="./Useful Links/policy.html">
-                                        
+                                    <a class="footer-nav-link link" href="./policy.html">
                                         Privacy Policy
                                     </a>
                                 </li>
                                 <li class="footer-nav-item">
-                                    <a class="footer-nav-link link" href="./Useful Links/tac.html">
+                                    <a class="footer-nav-link link" href="./tac.html">
                                         Terms and conditions
                                     </a>
                                 </li>
                             </ul>
-
                         </div>
                     </nav>
                 </div>
             </div>
-            <div class="footer-lower">
-
-            </div>
         </div>
+        
         <hr id="footer-hr">
         <div class="lower">
-
             <div class="social-nav-container">
                 <ul class="social-nav-list">
                     <li class="social-nav-item">
@@ -479,6 +488,10 @@
                     </li>
                 </ul>
             </div>
+            <div class="logo-container">
+            <h3 id="venture">A venture by RisingIndia ThinkTank </h3>
+            <img src="img/logo1.png" alt="" class="logo">
+             </div>
             <div class="copyright">
                 <p class="copy-text">&copy;All Rights Reserved | Copyright </p>
             </div>

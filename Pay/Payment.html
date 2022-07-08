@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html long="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="pay.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=divice-width, intitial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <a><img src="img/ly-0-A0xKj8kag2cWW5Gw.png" alt="" class="logo"></a>
+        <div class="title">Lazy Yoga Registration for Corporate Section</div>
+        <form onsubmit="return myFun()" action="payment.jsp">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" id="fname" name="fname" placeholder="Enter First Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email Id</span>
+                    <input type="email" id="Eid" name="Eid" placeholder="Enter Email Id" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="tel" id="Phone" name="Phone" placeholder="Enter Phone Number" pattern="^\d{10}$"
+                        required maxlength="10" size="10">
+                    <span id="ph"></span>
+                </div>
+                <div class="input-box">
+                    <span class="details">Gender</span>
+                    <select class="gender" id="Gender" name="Gender">
+                        <option value="Gender">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <span id="ge"></span>
+                </div>
+                <div class="input-box">
+                    <span class="details">Select Plan (per person)</span>
+                    <select class="plan" id="Plan" name="Plan">
+                        <option value="Plan">Select Plan</option>
+                        <option value="world"> LazyYoga World</option>
+                        <option value="universe">LazyYoga Universe</option>
+                        <option value="annual">Annual LazyYoga Contract</option>
+                    </select>
+                    <span id="pe"></span>
+                </div>
+                <div class="input-box">
+                    <span class="details">Number of Person</span>
+                    <select class="plan" id="pers" name="pers">
+                        <option value="person">Select Person</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <span id="per"></span>
+                </div>
+                <div class="input-box">
+                    <span class="details">Paid amount</span>
+                    <input type="number" placeholder=" " id="am" name="am" class="ams" readonly="true">
+                </div>
+                <div class="input-box">
+                    <label style="width:50px;"><input type="text" name="coupon" id="in" class="coupon"
+                            title="Enter coupon">
+                        <input type="button" value="Apply" onClick="validate()" />
+                </div>
+                <span id="message"></span>
+
+
+                <div class="button">
+                    <input type="submit" value="Pay Now">
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function myFun() {
+            var a = document.getElementById("Gender").value;
+            var b = document.getElementById("Plan").value;
+            var c = document.getElementById("pers").value;
+            var amt = document.getElementById("am").value;
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var Phone = document.getElementById("Phone").value;
+
+
+            console.log("fname : ", fname)
+            console.log("lname : ", lname)
+            console.log("Phone : ", Phone)
+            console.log("Gender : ", a)
+            console.log("Person : ", c)
+            console.log("Plan : ", b)
+
+            if (a == "Gender") {
+                document.getElementById("ge").innerHTML = "** select Gender";
+                return false;
+            } document.getElementById("ge").innerHTML = "";
+
+
+            if (b == "Plan") {
+                document.getElementById("pe").innerHTML = "** select Plan";
+                return false;
+            } document.getElementById("pe").innerHTML = "";
+
+            if (c == "person") {
+                document.getElementById("per").innerHTML = "** select number of person";
+                return false;
+            } document.getElementById("per").innerHTML = "";
+
+            if (b == "world") {
+                var amt = document.getElementById("am").value = c * 999;
+                console.log("am: ", amt)
+
+                return func_search();
+            }
+            if (b == "universe") {
+                var amt = document.getElementById("am").value = c * 1399;
+                console.log("am: ", amt)
+
+                return func_search();
+            }
+            if (b == "annual") {
+                var amt = document.getElementById("am").value = c * 1899;
+                console.log("am: ", amt)
+
+                return func_search();
+            }
+
+
+
+
+        }
+
+        function func_search() {
+            window.location = "./payment.jsp"
+        }
+
+        function validate(coupon) {
+            var myRe = ['RisingIndia50', '500'];
+            var input = document.getElementById('in').value;
+            var input = 500
+            var amt = document.getElementById("am")
+            // console.log(myRe[1])
+
+            if (input != "") {
+                for (let i = 0; i < myRe.length; i++)
+                    if (input == myRe[0]) {
+                        document.getElementById('message').innerHTML = "COupoun Applied Succesfully";
+                        var finalPrice = amt.value / 2;
+                        console.log(finalPrice);
+                        amt.value = finalPrice
+                    }
+                    else if (input == myRe[1]) {
+                        document.getElementById('message').innerHTML = "COupoun Applied Succesfully";
+                        var finalPrice = amt.value / 10;
+                        console.log(finalPrice);
+                        amt.value = finalPrice
+                    }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+:root {
+    --primary: white
+}
+
+
+.back {
+    position: absolute;
+    z-index: +1;
+    background: rgba(0, 0, 0, 0.89);
+    height: 100vh;
+    width: 100vw;
+
+    animation-fill-mode: none;
+    animation-name: backload;
+    /* 3.5s ease 2s 1 forwards; */
+    animation-duration: 2.2s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes backload {
+    0% {
+        opacity: 1;
+    }
+
+    75% {
+
+        opacity: 0;
+    }
+
+    100% {
+        top: -9999px;
+        left: -9999px;
+
+    }
+}
+
+
+
+.venture>p {
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+
+    white-space: nowrap;
+
+    margin: 0 auto;
+
+    letter-spacing: 0.15em;
+    text-align: center;
+    position: absolute;
+    top: 50vh;
+    left: 38vw;
+    animation: typing 2s steps(50, end),
+        blink-caret 1.5s step-end infinite,
+        disappear 2.5s ease 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 30%;
+    }
+}
+
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    font-weight: 400;
+}
+
+.left>img {
+    width: 100%;
+    max-width: 11.25rem;
+}
+
+.link {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+.menu-bar {
+    font-size: 1.125rem;
+    position: static;
+    padding: 2px 2.1875rem 0 2.1875rem;
+    display: flex;
+    animation: mymove1 1s;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@keyframes mymove1 {
+    from {
+        bottom: 3.125rem;
+    }
+
+    to {
+        bottom: 0rem;
+    }
+}
+
+#navul {
+    list-style: none;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.125rem;
+    padding-right: 6.25rem;
+}
+
+#navul>li>a {
+    text-decoration: none;
+    color: black;
+    font-size: .9375rem;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+    font-weight: bold;
+}
+
+.hero-ct {
+    font-size: .9375rem;
+}
+
+.menu-bar ul li a:hover {
+    text-decoration: none;
+    font-size: 1.25rem;
+    border-radius: .0625rem;
+}
+
+.navspan {
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu-bar {
+        align-items: center;
+    }
+
+    .left>img {
+        width: 100px;
+    }
+
+    .navspan {
+        opacity: 1;
+        position: absolute;
+        left: 80vw;
+
+    }
+
+    #navul {
+        display: none;
+        list-style: none;
+        color: black;
+        padding: 0;
+        position: relative;
+        gap: 15px;
+    }
+
+    #navul li {
+        text-align: right;
+        margin-bottom: 15px;
+    }
+
+    #navul li a {
+
+        width: 100%;
+        text-align: right;
+        color: black;
+        font-size: .9375rem;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: .125rem;
+        font-weight: bold;
+    }
+}

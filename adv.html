@@ -2,46 +2,63 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
-    crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Corporate</title>
-  <link rel="stylesheet" href="Basic.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corporate</title>
+    <link rel="stylesheet" href="Basic.css" />
+    <style>
+    @media screen and (max-width: 768px){
+    #navul{    
+     top: 5vh; 
+    } 
+    .footer {
+      margin-top: 15px;
+    }
+    }
+    </style>
 </head>
 
 <body>
 
-  <div class="main">
-    <div class="left">
-      <div class="heading">
-        <h1 class="animatedText">Corporate Section</h1>
-      </div>
-    </div>
-    <div class="right">
-      <div class="cpage" style="float: left; padding-top: 5px">
-        <a href="Yoga.html">Main Page</a>
-        <a href="adv.html">Corporate Section</a>
-      </div>
-    </div>
-  </div>
-  <!-- <section class="fade-in-text"> -->
+    <header class="main-header">
 
-  <h2 class="center">LAZY YOGA IN 11 MINUTES</h2>
-  <div class="desc " style="padding: 50px 0;">
+        <div class="menu-bar" id="bar">
+            <div class="left">
+                <img src="./img/logo.jpg" alt="">
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-bars navspan" onclick=opennav()></i>
+                <ul id="navul">
+                    <li><a href="#Yoga">Yoga</a></li>
+                    <li><a href="./coach.html">Coach</a></li>
+                    <li><a href="#banner-content">About Us</a></li>
+                    <li><a href="./join.html">Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
-    <img src="img/Project 4.jpg" id="corporate"">  
+    <div id="hero">
+
+
+        <h2 class="center">LAZY YOGA IN 11 MINUTES</h2>
+        <div class="desc " style="padding: 50px 0;">
+
+            <img src="./img/Project 4.jpg" id="corporate"">  
         <p>
           11 years Spiritually researched Yoga Asanas précised for developing healthy lifestyle
           Healthy lifestyle without losing time as essence complete Yoga in just 11 minutes.
@@ -52,117 +69,188 @@
         <br>
         Furthermore, your body would stretch and your intellect would easily align to work expectations.</p>
         <br style=" clear: both;" />
-    </p>
-  </div>
-  <div class="button">
+            </p>
+        </div>
+        <div class="button">
 
-    <a href="individual.html" class="hero-cta-link">Start Yoga</a>
-  </div>
-  <!-- </section> -->
+            <a href="./Pay/individual.html" class="hero-cta-link">Start Yoga</a>
+        </div>
+        <!-- </section> -->
 
-  <div class="adv-intro">
-    <div class="intro-image">
-      <img src="./img/IMG-20220620-WA0001.jpg" id="graph" alt="" />
+        <div class="adv-intro">
+            <div class="intro-image">
+                <img src="./img/IMG-20220620-WA0001.jpg" id="graph" alt="" />
+            </div>
+            <div class="intro-content">
+                <h2 class="adv-animate-charcter">Why Yoga?</h2>
+                <p class="adv-txt">
+                    &#10004 The yoga industry is worth over $88bn worldwide and expected to reach $215bn by 2025, thus
+                    growing at a
+                    CAGR of 11.7%.
+                    <br>
+                    <br>
+                    <br>
+                    &#10004 Over the next three years, the Indian wellness industry would grow at a CAGR of 20% to reach
+                    $11 bn.
+                </p>
+                <h2 style="font-size: 35px; text-align: center; padding-top: 35px; padding-bottom: 25px;">More Benefits
+                </h2>
+                <h3>Yoga can treat diseases like the following, thus resulting in massive cost saving on treatment</h3>
+                <br>
+                <table>
+                    <tr>
+                        <th>Diseases</th>
+                        <th>People Suffering</th>
+                        <th>Cost of Treatment</th>
+                    </tr>
+                    <tr>
+                        <td class="td">Arthritis</td>
+                        <td class="td">18 crores</td>
+                        <td class="td">INR 2000+ per month</td>
+                    </tr>
+                    <tr>
+                        <td class="td">Ankylosing spondylitis & lower back pain</td>
+                        <td class="td">82 crores</td>
+                        <td class="td">INR 1.5-2 lakhs</td>
+                    </tr>
+                    <tr>
+                        <td class="td">Diabetes</td>
+                        <td class="td">7.7 crores</td>
+                        <td class="td">INR 3000-8000 per month</td>
+                    </tr>
+                    <tr>
+                        <td class="td">PCOD</td>
+                        <td class="td">13 crores</td>
+                        <td class="td">INR 1,72,000 approx. for cyst removal</td>
+                    </tr>
+                    <tr>
+                        <td class="td">Weight loss (Obesity)</td>
+                        <td class="td">13.5 crores</td>
+                        <td class="td">INR 210000-560000</td>
+                    </tr>
+                </table>
+
+
+                <h4 style="font-weight:bold; font-size: 20px; padding: 40px; text-align: center;">Other diseases that
+                    can be cured
+                    include: asthma, hypertension, depression, liver ailments.</h4>
+            </div>
+        </div>
     </div>
-    <div class="intro-content">
-      <h2 class="adv-animate-charcter">Why Yoga?</h2>
-      <p class="adv-txt">
-        &#10004 The yoga industry is worth over $88bn worldwide and expected to reach $215bn by 2025, thus growing at a
-        CAGR of 11.7%.
-        <br>
-        <br>
-        <br>
-        &#10004 Over the next three years, the Indian wellness industry would grow at a CAGR of 20% to reach $11 bn.
-      </p>
-      <h2 style="font-size: 35px; text-align: center; padding-top: 35px; padding-bottom: 25px;">More Benefits</h2>
-      <h3>Yoga can treat diseases like the following, thus resulting in massive cost saving on treatment</h3>
-      <br>
-      <table>
-        <tr>
-          <th>Diseases</th>
-          <th>People Suffering</th>
-          <th>Cost of Treatment</th>
-        </tr>
-        <tr>
-          <td class="td">Arthritis</td>
-          <td class="td">18 crores</td>
-          <td class="td">INR 2000+ per month</td>
-        </tr>
-        <tr>
-          <td class="td">Ankylosing spondylitis & lower back pain</td>
-          <td class="td">82 crores</td>
-          <td class="td">INR 1.5-2 lakhs</td>
-        </tr>
-        <tr>
-          <td class="td">Diabetes</td>
-          <td class="td">7.7 crores</td>
-          <td class="td">INR 3000-8000 per month</td>
-        </tr>
-        <tr>
-          <td class="td">PCOD</td>
-          <td class="td">13 crores</td>
-          <td class="td">INR 1,72,000 approx. for cyst removal</td>
-        </tr>
-        <tr>
-          <td class="td">Weight loss (Obesity)</td>
-          <td class="td">13.5 crores</td>
-          <td class="td">INR 210000-560000</td>
-        </tr>
-      </table>
 
 
-      <h4 style="font-weight:bold; font-size: 20px; padding: 40px; text-align: center;">Other diseases that can be cured
-        include: asthma, hypertension, depression, liver ailments.</h4>
-    </div>
-  </div>
-
-
-  <footer style="padding-top: 15px;">
-    <section id="footer">
-      <div class="footer-container">
-        <div class="brand">
-          <div class="logo-container">
-            <h3>A venture by RisingIndia ThinkTank </h3>
+  <footer class="footer" data-aos="fade-down" data-aos-anchor-placement="center-bottom">
+        <div class="footer-content">
+            <div class="footer-upper">
+                <div class="footer-logo" id="about">
+                    <a href="#" class="link footer-logo">LazyYoga</a>
+                    <br>
+                </div>
+                <div class="footer-content">
+                    <nav class="footer-nav">
+                        <div class="contact">
+                            <p class="footer-title">Services</p>
+                            <ul class="footer-nav-list">
+                                <li class="footer-nav-item">
+                                    <a class="footer-nav-link link" href="./bass.html">
+                                        Individuals
+                                    </a>
+                                </li>
+                                <li class="footer-nav-item">
+                                    <a class="footer-nav-link link" href="./adv.html">
+                                        Corporates
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                      
+                        <div class="quick">
+                            <p class="footer-title">Quick Links</p>
+                            <ul class="footer-nav-list">
+                                <li class="footer-nav-item">
+                                    <a href="./index.html" class="footer-nav-link link">Home</a>
+                                </li>
+                                <li class="footer-nav-item">
+                                    <a href="./coach.html" class="footer-nav-link link">About Coach</a>
+                                </li>
+                                <li class="footer-nav-item">
+                                    <a href="mailto:hr@agrivaidic.in" class="footer-nav-link link">Contact Us</a>
+                                </li>          
+                            </ul>
+                        </div>
+                        <div class="contact">
+                            <p class="footer-title">Useful Links</p>
+                            <ul class="footer-nav-list">
+                                 <!-- <li class="footer-nav-item">
+                                    <a href="http://www.agrivaidic.in/" class="footer-nav-link link">AgriVaidic</a>
+                                </li>
+                                 <li class="footer-nav-item">
+                                    <a href="https://www.risingindia.in/" class="footer-nav-link link">RisingIndia</a>
+                                </li> -->
+                                <li class="footer-nav-item">
+                                    <a href="./join.html" class="footer-nav-link link">Career in LazyYoga</a>
+                                </li>
+                                <li class="footer-nav-item">
+                                    <a href="./invest.html" class="footer-nav-link link">Invest in LazyYoga</a>
+                                </li>
+                                 <li class="footer-nav-item">
+                                    <a class="footer-nav-link link" href="./policy.html">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="footer-nav-item">
+                                    <a class="footer-nav-link link" href="./tac.html">
+                                        Terms and conditions
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+        <hr id="footer-hr">
+        <div class="lower">
+            <div class="social-nav-container">
+                <ul class="social-nav-list">
+                    <li class="social-nav-item">
+                        <a href="https://www.facebook.com/AgriVaidic/" class="link social-link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="social-nav-item">
+                        <a href="https://www.instagram.com/agrivaidic/" class="link social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-nav-item">
+                        <a href="https://twitter.com/agrivaidic" class="link social-link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-nav-item">
+                        <a href="https://www.youtube.com/channel/UC5vJSH07IKit46Uc1wPx1iw" class="link social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="social-nav-item">
+                        <a href="https://www.linkedin.com/showcase/agrivaidic/" class="link social-link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo-container">
+            <h3 id="venture">A venture by RisingIndia ThinkTank </h3>
             <img src="img/logo1.png" alt="" class="logo">
-          </div>
-          <h1>Lazy Yoga</h1>
-          <h6>(lazyyoga@risingindia.in)</h6>
+             </div>
+            <div class="copyright">
+                <p class="copy-text">&copy;All Rights Reserved | Copyright </p>
+            </div>
         </div>
-        <div class="social-nav-container">
-          <ul class="social-nav-list">
-            <li class="social-nav-item">
-              <a href="https://www.facebook.com/AgriVaidic/" class="link social-link">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="social-nav-item">
-              <a href="https://www.instagram.com/agrivaidic/" class="link social-link">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </li>
-            <li class="social-nav-item">
-              <a href="https://twitter.com/agrivaidic" class="link social-link">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-            </li>
-            <li class="social-nav-item">
-              <a href="https://www.youtube.com/channel/UC5vJSH07IKit46Uc1wPx1iw" class="link social-link">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-            <li class="social-nav-item">
-              <a href="https://www.linkedin.com/showcase/agrivaidic/" class="link social-link">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-
-      </div>
-    </section>
-  </footer>
-
+    </footer>
+    <script src="main.js"></script>
 
 </body>
 
